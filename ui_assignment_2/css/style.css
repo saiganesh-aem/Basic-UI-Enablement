@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Source Serif Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Regular'), url('/fonts/SourceSerifPro-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro ExtraLight'), url('/fonts/SourceSerifPro-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Light'), url('/fonts/SourceSerifPro-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro SemiBold'), url('/fonts/SourceSerifPro-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Bold'), url('/fonts/SourceSerifPro-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Black'), url('/fonts/SourceSerifPro-Black.woff') format('woff');
+}
+
+:root {
+    --colorgray: gray;
+    --colorLightGray: lightgrey;
+    --colorblack: #000;
+}
+
+* {
+    font-family: "Source Serif Pro Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.header, .content, .footer {
+    display: flex;
+    padding: 1rem 0;
+}
+
+.header a, .content-list a, .footer-list a {
+    text-decoration: none;
+    color: var(--colorblack);
+    font-size: .8rem;
+}
+
+.header > .logo {
+    width: 30%;
+}
+
+.header > .logo > a {
+    font-size: 1.5rem;
+}
+
+.header > .menu {
+    width: 40%;
+}
+
+.menu > ul {
+    display: flex;
+}
+
+.menu > ul > li {
+    list-style: none;
+    margin: 0 .5rem;
+}
+
+.header > .operations {
+    width: 30%;
+    display: flex;
+}
+
+.operations > div {
+    margin: 0 0.5rem;
+}
+
+.operations img {
+    width: .8rem;
+    margin: -0.1rem 0.25rem;
+}
+content {
+    border-top: 0.12rem solid var(--colorLightGray);
+    margin: 1rem 0;
+    padding: 0 3rem;
+}
+
+.content-list {
+    width: 20%;
+}
+
+.content-list h2 {
+    font-size: 1rem;
+}
+
+.content-list li > a {
+    color: var(--colorgray);
+}
+
+.content-list li {
+    list-style: none;
+}
+
+footer {
+    border-top: 0.12rem solid var(--colorLightGray);
+    margin: 1rem 0;
+    padding: 0 3rem;
+}
+
+.footer-list {
+    width: 20%;
+}
+
+.footer-list h2 {
+    font-size: 1rem;
+}
+
+.footer-list li > a {
+    color: var(--colorgray);
+}
+
+.footer-list li {
+    list-style: none;
+}
