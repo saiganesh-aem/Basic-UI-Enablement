@@ -1,0 +1,169 @@
+@font-face {
+    font-family: 'Source Serif Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Regular'), url('/fonts/SourceSerifPro-Regular.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro ExtraLight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro ExtraLight'), url('/fonts/SourceSerifPro-ExtraLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Light'), url('/fonts/SourceSerifPro-Light.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro SemiBold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro SemiBold'), url('/fonts/SourceSerifPro-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Bold'), url('/fonts/SourceSerifPro-Bold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Source Serif Pro Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Source Serif Pro Black'), url('/fonts/SourceSerifPro-Black.woff') format('woff');
+}
+
+:root {
+    --colorgray: gray;
+    --colorLightGray: lightgrey;
+    --colorblack: #000;
+}
+
+* {
+    font-family: "Source Serif Pro Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 1em 0;
+}
+
+header a,header a:hover, footer a {
+    text-decoration: none;
+    color: var(--colorblack);
+    font-size: .8rem;
+}
+
+.logo > a,  .logo > a:hover{
+    font-size: 1.5rem;
+}
+
+.functions > div {
+    margin: 0 0.5rem;
+}
+
+.operations img {
+    width: .8rem;
+    margin: -0.1rem 0.25rem;
+}
+
+footer > div {
+    border-top: 0.12rem solid var(--colorLightGray);
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.footer_nav h2 {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.footer_nav li > a {
+    color: var(--colorgray);
+}
+
+footer p {
+    color: var(--colorgray);
+    font-size: 0.8em;
+}
+
+.footer_above a {
+    margin: 0 1em 0 0;
+}
+
+.footer_above img {
+    height: 1.25em;
+}
+
+.footer_links li {
+    list-style: none;
+}
+.footer_utility_links {
+    margin: 1em;
+}
+.footer_utility_links a {
+    margin: 0 1em;
+    text-decoration: underline;
+    font-size: 0.8em;
+}
+.image_content {
+    margin: 1em 0;
+}
+.image_content img{
+    width: 94%;
+}
+.image_content-text { 
+    background: #1B252C;
+    color: var(--white);
+    padding: 1em 2em;
+    position: absolute;
+    bottom: -0.4em;
+    width: 70%;
+    right: 1em;
+    border-bottom: .4em solid var(--primary);
+}
+.image_content-text h2 {
+    font-size: 1.5em;
+}
+.image_content-text p {
+    font-size: 0.8em;
+}
+
+.button {
+    border-radius: 2em;
+    margin: 0.5em;
+    font-size: .8em;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.button-secondary {
+    background: none;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.border_small--primary{
+    border-bottom: 0.3em solid var(--primary);
+    width: 20%;
+    margin: 1em;
+}
+
+.align-center{
+        margin: auto;
+        width: 20%;
+        padding: 10px;
+}
