@@ -1,0 +1,27 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  --colorgray: #85878c;
+  --colorLightGray: #e5e5e7;
+  --colorDarkGray: #91959c;
+  --colorwhite: #fff;
+  --primary-brand: #1f39ff;
+  --primary-d1: #172bc4;
+  --color-primary-brand: #1363df;
+  --colorblue: blue;
+}
+.paddingtb-1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.grid {
+  display: grid;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.btn.focus, .btn:focus, .btn:hover {
+  color: white;
+  background-color: var(--primary-d1);
+}

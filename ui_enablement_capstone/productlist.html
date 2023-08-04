@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <link rel="stylesheet" href="resources/css/variable.css" />
+    <link rel="stylesheet" href="resources/css/global/bootstrap.css" />
+    <link rel="stylesheet" href="resources/css/style.css" />   
+    <link rel="stylesheet" href="resources/css/productdetail.css" />
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>VENIA Project</title>
+  </head>
+  <body class="no-gutters">
+    <header class="container">
+        <nav class="container navbar navbar-expand-sm">
+            <button
+              class="navbar-toggler navbar-light"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="logo col col-md-1">
+              <h1><a class="logo_text" href="#">VENIA</a></h1>
+            </div>
+            <div class="col-1 d-block d-sm-none operations d-flex">
+              <div class="operations_cart">
+                <a href="cart.html" class="operations_cart--text">
+                    <span id="cartitem" class="dot"></span>
+                  <img src="/resources/images/1-shopping-bag.jpg" alt="Cart" />
+                </a>
+              </div>
+            </div>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productlist.html?category=women's clothing">Women</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productlist.html?category=men's clothing">Men</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productlist.html?category=jewelery">Jwellery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="productlist.html?category=electronics">Electronics</a>
+                </li>
+              </ul>
+            </div>
+            <div class="operations d-flex">
+              <div  id="mini_cart" class="operations_cart d-none d-sm-block">
+                <a href="cart.html" class="operations_cart--text">
+      <span id="cartitem" class="dot"></span>
+                  <img src="/resources/images/1-shopping-bag.jpg" alt="Cart" />
+                </a>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container" id="product__item--list">
+      <div class="hero hero--3" id="product__item--list--topblock">
+        <div class="col-md-4 hero-content">
+          <h1></h1>
+        </div>
+        <div class="col-md-8 hero-banner">
+          <img src="resources/images/Group 172788.png" alt="banner"/>
+        </div>
+      </div>
+      <div class="product__itemlist--bottomblock d-lg-inline-flex">
+        <div class="col-md-4 plbottomblock__left">
+          <div class="col-md-8">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Clothing</a></li>
+              <li class="breadcrumb-item"><a href="#">Women</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Outdoor
+              </li>
+            </ol>
+          </nav>
+          <p>Filters</p>
+          <hr />
+          <input
+            type="checkbox"
+            id="menwear"
+            name="Men's Wear"
+            value="men's clothing"
+          />
+          <label for="menwear"> Men Wear</label><br />
+          <input
+            type="checkbox"
+            id="womenwear"
+            name="Women's Wear"
+            value="women's clothing"
+          />
+          <label for="womenwear"> Women Wear</label><br />
+          <input
+            type="checkbox"
+            id="jwellery"
+            name="Jwellery"
+            value="jewelery"
+          />
+          <label for="jwellery"> Jwellery</label><br />
+          <input
+            type="checkbox"
+            id="electronics"
+            name="Electronics"
+            value="electronics"
+          />
+          <label for="electronics"> Electronics</label><br />
+          <hr />
+        </div>
+        </div>
+        <div class="col-md-8 grid">
+          <div class="paddingtb-1">
+            <span id="totalitem" class="col-md-8"></span>
+            <div class="d-flex justify-content-end">
+              <select name="sortby" id="sortby">
+                <option value="price">Sort by price</option>
+                <option value="rating">Sort by rating</option>
+                <option value="highpurchase">Sort by Highest purchase</option>
+                <option value="lowpurchase">Sort by Lowest purchase</option>
+              </select>
+            </div>
+          </div>
+          <div id="product--list"></div>
+          <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">               
+                <li><a class="page-link" href="#">1</a></li>
+                <li><a class="page-link" href="#">2</a></li>
+                <li><a class="page-link" href="#">3</a></li>
+                <li><a class="page-link" href="#">4</a></li>
+                <li>
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+      </div>
+    </main>
+    <footer>
+        <div class="footertop">
+          <section class="footertopAccount col-lg-3">
+            <h3>Account</h3>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Sign in</a>
+                </li>
+                <li>
+                  <a href="#">Register</a>
+                </li>
+                <li>
+                  <a href="#">Order Status</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="about col-lg-2">
+            <h3>About Us</h3>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Our Story</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footertopHelp col-lg-3">
+            <h3>Help</h3>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Order Status</a>
+                </li>
+                <li>
+                  <a href="#">Returns</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footertopFollowUs col-lg-3">
+            <h3>Follow us!</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut sed nunc
+              eu turpis aliquet rutrum vitae sit amet sem. Sed vitae leo sed velit
+              venenatis finibus. Vestibulum ante ipsum primis in faucibus orci
+              luctus et ultrices posuere cubilia curae;
+            </p>
+            <div class="socialIcons">
+                <a href="#"><img src="resources/images/1-instagram.jpg" alt="social icon1"/></a>
+                <a href="#"><img src="resources/images/1-facebook.jpg" alt="social icon2"/></a>
+                <a href="#"><img src="resources/images/1-twitter.jpg" alt="social icon3"/></a>
+            </div>
+          </section>
+        </section>
+        <div class="footerbottom container mx-0">
+          <section class="footerbottom--left col-lg-1">
+            <!-- <img src=""> -->
+            <a href="#" class="logo">VENIA</a>
+          </section>
+          <section class="footerbottom--middle col-lg-7">
+            @ copyright, company name address city name zip
+          </section>
+          <section class="footerbottom-right col-lg-3">
+            <nav>
+              <ul>
+                <li>
+                  <a href="#">Terms of use</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+        </div>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/js/productlist.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,510 @@
+
+ * {
+	 margin: 0;
+	 color: var(--colorgray);
+}
+ .container {
+	 padding: 0;
+}
+ div a {
+	 text-decoration: none;
+	 color: var(--colorgray);
+}
+ .dot {
+	 position: absolute;
+	 text-align: center;
+	 color: var(--colorwhite);
+	 top: 0;
+	 height: 2em;
+	 width: 2em;
+	 background-color: black;
+	 border-radius: 50%;
+}
+ main .btn__primary {
+	 background-color: var(--primary-brand);
+	 color: var(--colorwhite);
+}
+ header.container {
+	 background-color: var(--primary-brand);
+	 height: auto;
+	 padding-right: 1em;
+	 padding-left: 1em;
+}
+ header.container a, header.container i {
+	 color: var(--colorwhite);
+}
+ header.container nav {
+	 padding: 0;
+	 margin: 0;
+}
+ .gallery__item {
+	 height: auto;
+	 display: inline-flex;
+	 justify-content: start;
+	 flex-direction: column;
+	 align-items: flex-end;
+	 height: 200px;
+}
+ .gallery__item .gallery__img {
+	 width: 100%;
+	 height: 200px;
+}
+ .gallery__item .gallery__item-caption {
+	 position: relative;
+	 background-color: black;
+	 background: rgba(0, 0, 0, 0.6);
+	 z-index: 2;
+	 width: 100%;
+	 color: var(--colorwhite);
+	 left: 0.5em;
+	 padding: 1em;
+	 border-bottom: 0.5em solid var(--colorblue);
+}
+ .gallery figcaption h1 {
+	 font-size: 1rem;
+	 margin: 0;
+}
+ .gallery figcaption p {
+	 margin-bottom: 0.3em;
+	 font-size: 0.9rem;
+	 color: var(--colorwhite);
+}
+ .gallery__item:first-child {
+	 padding-left: 0;
+}
+ footer a:hover, main a:hover {
+	 color: var(--darkgray);
+}
+ footer p, main p {
+	 color: var(--colorgray);
+}
+ @media only screen and (min-width: 768px) {
+	/* For desktop: */
+  .body{
+
+  }
+	/** footer styling starts from here**/
+	 .mobnav, .hero-banner--mob {
+		 display: none;
+	}
+	 .logo {
+		 letter-spacing: 0.25em;
+		 font-size: 1em;
+		 font-weight: 100;
+	}
+	 header > div {
+		 display: inline-flex;
+	}
+	 header > div a {
+		 font-size: 0.8em;
+		 color: var(--colorwhite);
+	}
+	 header > div span {
+		 font-size: 1em;
+		 font-weight: 700;
+		 vertical-align: middle;
+	}
+	 header > div.header-middle {
+		 flex-direction: column;
+		 justify-content: center;
+		 align-items: center;
+	}
+	 header > div.header-left {
+		 justify-content: left;
+	}
+	 header > div.header-right {
+		 justify-content: right;
+	}
+	 header > div.header-right div {
+		 padding-right: 0.85em;
+	}
+	 header > div.header-right img {
+		 height: 1.2rem;
+		 width: 1.2em;
+	}
+	 header nav ul li {
+		 display: inline-flex;
+		 margin: 0.5rem;
+	}
+	 footer > .footertop, footer > .footerbottom {
+		 font-size: 12px;
+		 border: 1px solid var(--colorLightGray);
+		 padding: 1em;
+	}
+	 footer > .footertop img, footer > .footerbottom img {
+		 padding: 0 5px;
+		 height: 1.5em;
+	}
+	 footer > div.footertop > section {
+		 display: inline-block;
+		 vertical-align: top;
+		 font-size: 0.9em;
+	}
+	 footer ul {
+		 padding: 0;
+		 margin: 0;
+	}
+	 footer .footertop ul li {
+		 display: block;
+		 margin: 0.5em 0;
+	}
+	 footer .footerbottom ul li {
+		 display: inline-flex;
+		 text-decoration: underline;
+		 font-weight: 700;
+	}
+	 footer .footerbottom > section {
+		 display: inline-block;
+		 text-align: center;
+	}
+	 footer .footerbottom .footerbottom-right li {
+		 padding: 0.5em;
+		 text-align: center;
+	}
+	 footer .socialIcons {
+		 margin-top: 10px;
+	}
+	 main .hero {
+		 line-height: inherit;
+		 height: 400px;
+		 display: inline-flex;
+		 align-items: center;
+		 width: 100%;
+	}
+	 main .hero .hero-banner {
+		 padding: 0;
+		 height: 100%;
+	}
+	 main .hero .hero-banner img {
+		 width: 100%;
+		 height: 400px;
+	}
+	 main .hero .hero-content {
+		 text-align: left;
+		 height: min-content;
+	}
+	 main .hero .hero-content h1 {
+		 font-size: 30px;
+		 margin-bottom: 20px;
+		 color: black;
+	}
+	 main .hero .hero-content p {
+		 font-size: 12px;
+		 margin-bottom: 30px;
+		 color: darkslategray;
+	}
+	 main .hero .hero-content hr {
+		 border: 2px solid var(--colorblue);
+		 width: 15%;
+		 margin-bottom: -6em;
+		 margin-top: 3em;
+	}
+	 main .hero.background-gray {
+		 background-color: var(--colorLightGray);
+	}
+	 main .hero.hero--3 {
+		 height: 250px;
+	}
+	 main .hero.hero--3 img {
+		 height: 250px;
+	}
+	 main .hero.hero--3 .hero-content {
+		 background-color: black;
+		 height: 106%;
+		 color: var(--colorwhite);
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+	}
+	 main .hero.hero--3 .hero-content > div {
+		 padding: 4em;
+	}
+	 main .hero.hero--3 .btn-block {
+		 background-color: black;
+		 padding: 0.25em 5em;
+		 border: 1px solid var(--colorwhite);
+	}
+	 main .hero.hero--3 h1, main .hero.hero--3 p {
+		 color: var(--colorwhite);
+	}
+	 main .btn-block {
+		 width: 30%;
+		 border-radius: 2em;
+		 display: inline-flex;
+		 justify-content: center;
+		 margin-left: auto;
+		 margin-right: auto;
+		 margin-top: 0;
+		 background-color: var(--color-primary-brand);
+		 color: var(--colorwhite);
+	}
+	 main .btn__secondary {
+		 background-color: var(--colorwhite);
+		 color: var(--primary-brand);
+		 border: 0.2em solid var(--primary-brand);
+	}
+	 main .btn-block + .btn-block {
+		 margin-top: 0;
+	}
+	 main .gallery {
+		 display: grid;
+		 grid-template-columns: repeat(4, 1fr);
+		 grid-template-rows: auto;
+		 grid-gap: 15px;
+		 height: auto;
+		 position: relative;
+		 top: -1.5em;
+		 padding: 0 1em;
+		 height: 200px;
+	}
+	 main .gallery .gallery__item-caption {
+		 top: -5em;
+	}
+	 main .gallery-4 {
+		 display: grid;
+		 grid-template-columns: repeat(4, 1fr);
+		 grid-template-rows: auto;
+		 grid-gap: 20px;
+		 height: auto;
+		 position: relative;
+		 margin-bottom: 7em;
+	}
+	 main .gallery-4 figcaption {
+		 width: 100%;
+	}
+	 main .gallery-4 figcaption h5, main .gallery-4 figcaption p {
+		 color: black;
+	}
+	 main .heading__block {
+		 padding: 0.5em 0;
+		 display: flex;
+		 align-items: center;
+		 justify-content: center;
+		 font-size: 3em;
+		 color: black;
+	}
+}
+ @media only screen and (max-width: 767px) {
+	 .header-middle, .header-right #signin, .hero--fullwidth .hero-banner, .hero--fullwidth .hero-content {
+		 display: none;
+	}
+	 header {
+		 margin: 0;
+		 text-align: center;
+		 height: 25px;
+	}
+	 header .header-right {
+		 display: inline-flex;
+	}
+	 header .header-right div {
+		 margin: 0 0.9em;
+	}
+	 header .mobnav a {
+		 justify-content: left;
+	}
+	 header .logo {
+		 letter-spacing: 0.3em;
+		 font-size: 1em;
+		 font-weight: 100;
+	}
+	 header .dot {
+		 height: 1.5em;
+		 width: 1.5em;
+		 left: 1.5em;
+		 top: -1em;
+	}
+	 header div.mobnav {
+		 display: flex;
+	}
+	 header.container {
+		 padding-right: 0;
+		 padding-left: 0;
+	}
+	 main figure a {
+		 width: 100%;
+		 padding-left: 2em;
+		 padding-right: 2em;
+	}
+	 main figure:last-child {
+		 padding-bottom: 0;
+	}
+	 main .btn-block {
+		 width: 50%;
+		 border-radius: 2em;
+		 justify-content: center;
+		 margin-left: auto;
+		 margin-right: auto;
+		 background-color: var(--color-primary-brand);
+		 color: var(--colorwhite);
+		 display: flex;
+	}
+	 main .btn__secondary {
+		 background-color: var(--colorwhite);
+		 color: var(--primary-brand);
+		 border: 0.2em solid var(--primary-brand);
+		 grid-row: 0.8;
+	}
+	 main .btn-block + .btn-block {
+		 margin: 1em 0;
+	}
+	 main .hero {
+		 display: inline-flex;
+	}
+	 main .hero .hero-banner--mob {
+		 padding: 0;
+	}
+	 main .hero .hero-banner--mob img {
+		 width: 100%;
+	}
+	 main .hero .hero__content--mob {
+		 position: absolute;
+		 bottom: 5rem;
+		 text-align: center;
+		 padding: 0 3.5em;
+	}
+	 main .hero .hero__content--mob h1, main .hero .hero__content--mob p {
+		 color: black;
+	}
+	 main .hero .hero__content--mob button {
+		 width: 50%;
+		 border-radius: 2em;
+		 padding: 0.5em 1em;
+		 align-items: center;
+		 display: inline-flex;
+		 justify-content: center;
+		 margin-top: 2em;
+	}
+	 main .hero.hero--2 {
+		 display: grid;
+	}
+	 main .hero.hero--2 .hero-content {
+		 grid-row: 0.6666666667;
+		 display: grid;
+		 justify-items: center;
+	}
+	 main .hero.hero--2 .hero-content h1 {
+		 padding: 0 1em;
+		 font-size: 2em;
+	}
+	 main .hero.hero--2 .hero-content p {
+		 text-align: center;
+	}
+	 main .hero-content hr {
+		 border: 2px solid var(--colorblue);
+		 margin-bottom: 0;
+		 width: 20%;
+	}
+	 main .hero.hero--3 {
+		 display: grid;
+		 justify-items: center;
+	}
+	 main .hero.hero--3 .hero-banner {
+		 padding: 0;
+	}
+	 main .hero.hero--3 .hero-banner img {
+		 width: 100%;
+	}
+	 main .hero.hero--3 .hero-content {
+		 background-color: black;
+		 color: var(--colorwhite);
+		 display: flex;
+		 justify-content: center;
+		 align-items: center;
+		 width: 90%;
+		 top: -2em;
+	}
+	 main .hero.hero--3 .hero-content > div {
+		 padding: 4em;
+	}
+	 main .hero.hero--3 .btn-block {
+		 background-color: black;
+		 padding: 0.25em 5em;
+		 border: 1px solid var(--colorwhite);
+	}
+	 main .hero.hero--3 h1, main .hero.hero--3 p {
+		 color: var(--colorwhite);
+	}
+	 main .heading__block {
+		 font-size: 1.5em;
+		 font-weight: 600;
+		 text-align: center;
+	}
+	 main .gallery {
+		 padding: 0;
+		 position: relative;
+		 top: -2em;
+	}
+	 main .gallery .gallery__item {
+		 display: flex;
+		 margin-bottom: 2em;
+	}
+	 main .gallery .gallery__item .gallery__item-caption {
+		 left: 0;
+		 top: -4.85em;
+		 background: rgba(0, 0, 0, 0.6);
+	}
+	 main .gallery-4 {
+		 display: grid;
+		 grid-template-columns: repeat(3, 1fr);
+		 grid-template-rows: auto;
+		 grid-gap: 15px;
+		 padding: 1.5em 2em;
+	}
+	 footer {
+		 padding-top: 1em;
+		 padding-left: 1em;
+		 border-top: 0.25em solid var(--colorLightGray);
+		 font-size: 0.9em;
+	}
+	 footer h3 {
+		 font-weight: 550;
+		 font-size: 1.25rem;
+	}
+	 footer a {
+		 font-size: 0.9em;
+	}
+	 footer ul {
+		 list-style-type: none;
+		 padding-inline-start: 0;
+	}
+	 footer .socialIcons {
+		 margin-top: 10px;
+	}
+	 footer p {
+		 font-size: 0.9em;
+	}
+	 footer > div img {
+		 padding: 0 5px;
+		 height: 1.5em;
+	}
+	 footer .footertop {
+		 margin-bottom: 5em;
+	}
+	 footer .footerbottom {
+		 display: grid;
+		 padding: 2em;
+		 text-align: center;
+		 border-top: 0.1em solid var(--colorgray);
+		 margin: 2em;
+	}
+	 footer .footerbottom section.footerbottom--left {
+		 grid-row: 0.75;
+		 margin-top: 2em;
+	}
+	 footer .footerbottom section.footerbottom--left a {
+		 font-size: 1.5em;
+		 letter-spacing: 0.5em;
+	}
+	 footer .footerbottom section.footerbottom--middle {
+		 grid-row: 0.6666666667;
+	}
+	 footer .footerbottom section.footerbottom-right ul {
+		 display: flex;
+		 justify-content: center;
+	}
+	 footer .footerbottom section.footerbottom-right li {
+		 border-bottom: 0.1em solid var(--colorgray);
+		 margin-right: 1em;
+	}
+}
+ 
