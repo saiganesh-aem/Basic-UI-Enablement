@@ -103,34 +103,34 @@
  .product__descrtion--section h4 {
 	 font-size: 1em;
 }
- #product__item--list .hero.hero--3 {
+ #product-items .hero.hero--3 {
 	 height: 150px;
 }
- #product__item--list .hero.hero--3 img {
+ #product-items .hero.hero--3 img {
 	 height: 150px;
 }
- #product__item--list .product__itemlist--bottomblock .plbottomblock__left {
+ #product-items .product-bottom-list .bottom-product-left {
 	 display: inline-flex;
 	 justify-content: right;
 	 margin-top: 2em;
 }
- #product__item--list .product__itemlist--bottomblock #product--list {
+ #product-items .product-bottom-list #product_list {
 	 display: grid;
 	 grid-template-columns: repeat(3, 1fr);
 	 grid-gap: 2em;
 	 margin-bottom: 3em;
 }
- #product__item--list .product__itemlist--bottomblock #product--list .item {
+ #product-items .product-bottom-list #product_list .item {
 	 height: 300px;
 }
- #product__item--list .product__itemlist--bottomblock #product--list img {
+ #product-items .product-bottom-list #product_list img {
 	 height: 75%;
 	 width: 100%;
 }
- #product__item--list .product__itemlist--bottomblock #product--list img p {
+ #product-items .product-bottom-list #product_list img p {
 	 font-size: 0.9em;
 }
- #product__item--list .product__itemlist--bottomblock #product--list a:hover {
+ #product-items .product-bottom-list #product_list a:hover {
 	 color: var(--colorgray);
 }
  #productcart__container h1 {
@@ -203,33 +203,33 @@
 	 .qty-wapper {
 		 justify-content: center;
 	}
-	 #product__item--list {
+	 #product-items {
 		 padding-left: 0;
 		 padding-right: 0;
 	}
-	 #product__item--list #product__item--list--topblock {
+	 #product-items #product-top-items {
 		 display: flex;
 		 flex-flow: column-reverse;
 		 height: auto;
 	}
-	 #product__item--list #product__item--list--topblock .hero-content {
+	 #product-items #product-top-items .hero-content {
 		 margin: 0 1em;
 		 width: 90%;
 		 top: -4em;
 		 z-index: 2;
 		 padding: 3em 2em;
 	}
-	 #product__item--list #product__item--list--topblock .hero-content h1 {
+	 #product-items #product-top-items .hero-content h1 {
 		 border-bottom: 0.25em solid var(--primary-d1);
 		 padding-bottom: 1em;
 	}
-	 #product__item--list #product__item--list--topblock .hero-banner {
+	 #product-items #product-top-items .hero-banner {
 		 height: 200px;
 	}
-	 #product__item--list #product__item--list--topblock .hero-banner img {
+	 #product-items #product-top-items .hero-banner img {
 		 height: 100%;
 	}
-	 #product__item--list .product__itemlist--bottomblock #product--list {
+	 #product-items .product-bottom-list #product_list {
 		 grid-template-columns: repeat(2, 1fr);
 	}
 	 .prod__detail {

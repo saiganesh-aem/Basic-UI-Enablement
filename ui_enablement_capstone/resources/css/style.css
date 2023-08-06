@@ -3,7 +3,7 @@
 	 margin: 0;
 	 color: var(--colorgray);
 }
- .container {
+ .container_list {
 	 padding: 0;
 }
  div a {
@@ -20,24 +20,24 @@
 	 background-color: black;
 	 border-radius: 50%;
 }
- main .btn__primary {
+ main .button-primary {
 	 background-color: var(--primary-brand);
 	 color: var(--colorwhite);
 }
- header.container {
+ header.container_list {
 	 background-color: var(--primary-brand);
 	 height: auto;
 	 padding-right: 1em;
 	 padding-left: 1em;
 }
- header.container a, header.container i {
+ header.container_list a, header.container_list i {
 	 color: var(--colorwhite);
 }
- header.container nav {
+ header.container_list nav {
 	 padding: 0;
 	 margin: 0;
 }
- .gallery__item {
+ .category {
 	 height: auto;
 	 display: inline-flex;
 	 justify-content: start;
@@ -45,11 +45,11 @@
 	 align-items: flex-end;
 	 height: 200px;
 }
- .gallery__item .gallery__img {
+ .category .category_img {
 	 width: 100%;
 	 height: 200px;
 }
- .gallery__item .gallery__item-caption {
+ .category .category-caption {
 	 position: relative;
 	 background-color: black;
 	 background: rgba(0, 0, 0, 0.6);
@@ -69,7 +69,7 @@
 	 font-size: 0.9rem;
 	 color: var(--colorwhite);
 }
- .gallery__item:first-child {
+ .category:first-child {
 	 padding-left: 0;
 }
  footer a:hover, main a:hover {
@@ -79,18 +79,13 @@
 	 color: var(--colorgray);
 }
  @media only screen and (min-width: 768px) {
-	/* For desktop: */
-  .body{
 
-  }
-	/** footer styling starts from here**/
-	 .mobnav, .hero-banner--mob {
+	 .mobnav, .hero-banner-mob {
 		 display: none;
 	}
 	 .logo {
-		 letter-spacing: 0.25em;
-		 font-size: 1em;
-		 font-weight: 100;
+		 letter-spacing: 0.35em;
+		 font-size: 4em;
 	}
 	 header > div {
 		 display: inline-flex;
@@ -126,16 +121,16 @@
 		 display: inline-flex;
 		 margin: 0.5rem;
 	}
-	 footer > .footertop, footer > .footerbottom {
+	 footer > .topfooter, footer > .footer {
 		 font-size: 12px;
 		 border: 1px solid var(--colorLightGray);
 		 padding: 1em;
 	}
-	 footer > .footertop img, footer > .footerbottom img {
+	 footer > .topfooter img, footer > .footer img {
 		 padding: 0 5px;
 		 height: 1.5em;
 	}
-	 footer > div.footertop > section {
+	 footer > div.topfooter > section {
 		 display: inline-block;
 		 vertical-align: top;
 		 font-size: 0.9em;
@@ -144,20 +139,20 @@
 		 padding: 0;
 		 margin: 0;
 	}
-	 footer .footertop ul li {
+	 footer .topfooter ul li {
 		 display: block;
 		 margin: 0.5em 0;
 	}
-	 footer .footerbottom ul li {
+	 footer .footer ul li {
 		 display: inline-flex;
 		 text-decoration: underline;
 		 font-weight: 700;
 	}
-	 footer .footerbottom > section {
+	 footer .footer > section {
 		 display: inline-block;
 		 text-align: center;
 	}
-	 footer .footerbottom .footerbottom-right li {
+	 footer .footer .footer-right li {
 		 padding: 0.5em;
 		 text-align: center;
 	}
@@ -199,7 +194,7 @@
 		 margin-bottom: -6em;
 		 margin-top: 3em;
 	}
-	 main .hero.background-gray {
+	 main .hero.bg-gray {
 		 background-color: var(--colorLightGray);
 	}
 	 main .hero.hero--3 {
@@ -219,7 +214,7 @@
 	 main .hero.hero--3 .hero-content > div {
 		 padding: 4em;
 	}
-	 main .hero.hero--3 .btn-block {
+	 main .hero.hero--3 .button-section {
 		 background-color: black;
 		 padding: 0.25em 5em;
 		 border: 1px solid var(--colorwhite);
@@ -227,7 +222,7 @@
 	 main .hero.hero--3 h1, main .hero.hero--3 p {
 		 color: var(--colorwhite);
 	}
-	 main .btn-block {
+	 main .button-section {
 		 width: 30%;
 		 border-radius: 2em;
 		 display: inline-flex;
@@ -238,12 +233,12 @@
 		 background-color: var(--color-primary-brand);
 		 color: var(--colorwhite);
 	}
-	 main .btn__secondary {
+	 main .button_secondary {
 		 background-color: var(--colorwhite);
 		 color: var(--primary-brand);
 		 border: 0.2em solid var(--primary-brand);
 	}
-	 main .btn-block + .btn-block {
+	 main .button-section + .button-section {
 		 margin-top: 0;
 	}
 	 main .gallery {
@@ -257,7 +252,7 @@
 		 padding: 0 1em;
 		 height: 200px;
 	}
-	 main .gallery .gallery__item-caption {
+	 main .gallery .category-caption {
 		 top: -5em;
 	}
 	 main .gallery-4 {
@@ -285,7 +280,7 @@
 	}
 }
  @media only screen and (max-width: 767px) {
-	 .header-middle, .header-right #signin, .hero--fullwidth .hero-banner, .hero--fullwidth .hero-content {
+	 .header-middle, .header-right #signin, .hero_fullwidth .hero-banner, .hero_fullwidth .hero-content {
 		 display: none;
 	}
 	 header {
@@ -316,7 +311,7 @@
 	 header div.mobnav {
 		 display: flex;
 	}
-	 header.container {
+	 header.container_list {
 		 padding-right: 0;
 		 padding-left: 0;
 	}
@@ -328,7 +323,7 @@
 	 main figure:last-child {
 		 padding-bottom: 0;
 	}
-	 main .btn-block {
+	 main .button-section {
 		 width: 50%;
 		 border-radius: 2em;
 		 justify-content: center;
@@ -338,34 +333,34 @@
 		 color: var(--colorwhite);
 		 display: flex;
 	}
-	 main .btn__secondary {
+	 main .button_secondary {
 		 background-color: var(--colorwhite);
 		 color: var(--primary-brand);
 		 border: 0.2em solid var(--primary-brand);
 		 grid-row: 0.8;
 	}
-	 main .btn-block + .btn-block {
+	 main .button-section + .button-section {
 		 margin: 1em 0;
 	}
 	 main .hero {
 		 display: inline-flex;
 	}
-	 main .hero .hero-banner--mob {
+	 main .hero .hero-banner-mob {
 		 padding: 0;
 	}
-	 main .hero .hero-banner--mob img {
+	 main .hero .hero-banner-mob img {
 		 width: 100%;
 	}
-	 main .hero .hero__content--mob {
+	 main .hero .hero-content-mob {
 		 position: absolute;
 		 bottom: 5rem;
 		 text-align: center;
 		 padding: 0 3.5em;
 	}
-	 main .hero .hero__content--mob h1, main .hero .hero__content--mob p {
+	 main .hero .hero-content-mob h1, main .hero .hero-content-mob p {
 		 color: black;
 	}
-	 main .hero .hero__content--mob button {
+	 main .hero .hero-content-mob button {
 		 width: 50%;
 		 border-radius: 2em;
 		 padding: 0.5em 1em;
@@ -416,7 +411,7 @@
 	 main .hero.hero--3 .hero-content > div {
 		 padding: 4em;
 	}
-	 main .hero.hero--3 .btn-block {
+	 main .hero.hero--3 .button-section {
 		 background-color: black;
 		 padding: 0.25em 5em;
 		 border: 1px solid var(--colorwhite);
@@ -434,11 +429,11 @@
 		 position: relative;
 		 top: -2em;
 	}
-	 main .gallery .gallery__item {
+	 main .gallery .category {
 		 display: flex;
 		 margin-bottom: 2em;
 	}
-	 main .gallery .gallery__item .gallery__item-caption {
+	 main .gallery .category .category-caption {
 		 left: 0;
 		 top: -4.85em;
 		 background: rgba(0, 0, 0, 0.6);
@@ -477,32 +472,32 @@
 		 padding: 0 5px;
 		 height: 1.5em;
 	}
-	 footer .footertop {
+	 footer .topfooter {
 		 margin-bottom: 5em;
 	}
-	 footer .footerbottom {
+	 footer .footer {
 		 display: grid;
 		 padding: 2em;
 		 text-align: center;
 		 border-top: 0.1em solid var(--colorgray);
 		 margin: 2em;
 	}
-	 footer .footerbottom section.footerbottom--left {
+	 footer .footer section.footer_left {
 		 grid-row: 0.75;
 		 margin-top: 2em;
 	}
-	 footer .footerbottom section.footerbottom--left a {
+	 footer .footer section.footer_left a {
 		 font-size: 1.5em;
 		 letter-spacing: 0.5em;
 	}
-	 footer .footerbottom section.footerbottom--middle {
+	 footer .footer section.footer_middle {
 		 grid-row: 0.6666666667;
 	}
-	 footer .footerbottom section.footerbottom-right ul {
+	 footer .footer section.footer-right ul {
 		 display: flex;
 		 justify-content: center;
 	}
-	 footer .footerbottom section.footerbottom-right li {
+	 footer .footer section.footer-right li {
 		 border-bottom: 0.1em solid var(--colorgray);
 		 margin-right: 1em;
 	}

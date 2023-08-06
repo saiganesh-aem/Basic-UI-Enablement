@@ -32,10 +32,10 @@
                     <h1><a class="logo" href="#">VENIA</a></h1>
                   </div>
                   <div class="col-1 d-block d-sm-none operations d-flex">
-                    <div class="operations_cart">
-                      <a href="cart.html" class="operations_cart--text">
+                    <div>
+                      <a href="cart.html">
                           <span id="cartitem" class="dot"></span>
-                        <img src="/resources/images/1-shopping-bag.jpg" alt="Cart" />
+                        <img src="resources/images/1-shopping-bag.jpg" alt="Cart" />
                       </a>
                     </div>
                   </div>
@@ -54,7 +54,7 @@
                         <a class="nav-link" href="productlist.html?category=men's clothing">Men</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="productlist.html?category=jewelery">Jwellery</a>
+                        <a class="nav-link" href="productlist.html?category=jewelery">Jewellery</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="productlist.html?category=electronics">Electronics</a>
@@ -62,10 +62,10 @@
                     </ul>
                   </div>
                   <div class="operations d-flex">
-                    <div  id="mini_cart" class="operations_cart d-none d-sm-block">
-                      <a href="cart.html" class="operations_cart--text">
+                    <div  id="mini_cart" class="d-none d-sm-block">
+                      <a href="cart.html">
                         <span id="cartitem" class="dot"></span>
-                        <img src="/resources/images/1-shopping-bag.jpg" alt="Cart" />
+                        <img src="resources/images/1-shopping-bag.jpg" alt="Cart" />
                       </a>
                     </div>
                   </div>
@@ -109,12 +109,11 @@
                             </div>
                         </div>
                     </div>
-                
                      </div>
                     </div>
          </section>
          <aside class="col-md-4 ">
-            <div class="grid cart__container--summary">
+            <div class="grid">
                 <h5>Pricing Summary</h5>
                 <div><label>Subtotal</label><span id="subtotal"></span></div>
                 <div><label>Coupon</label><span id="coupon">-$77.00</span></div>
@@ -122,95 +121,100 @@
                 <div><label>Estimated Tax</label><span id="tax">$23.00</span></div>
                 <div><label>Esimated Shipping</label><span id="shipping">Free</span></div>
                 <div><label>Esimated Total</label><span id="toal">$233.00</span></div>
-            <div class="checkout__container d-flex flex-column" style="display:block">
-                <a href="checkout.html" class="button-primary btn-block my-3">
-                        <i class="bi bi-lock mr-1" style="color: white;"></i>CHECKOUT</a>
-                  <a href="#"><img style="width:80%" src="resources/images/paypal_button.png" alt="PayPal"/>
+            <div class="d-flex flex-column" style="display:block">
+                <a href="checkout.html" class="button-primary button-block my-3">
+                        <i class="bi bi-lock mr-1" style="color: white;"></i>Make Payment</a>
+                  <a href="#"><img style="width:80%" src="resources/images/paytm_button.jpg" alt="Make Payment"/>
       </main>
       <footer>
-         <div class="footertop">
-            <section class="footertopAccount col-lg-3">
-               <h3>Account</h3>
-               <nav>
-                  <ul>
-                     <li>
-                        <a href="#">Sign in</a>
-                     </li>
-                     <li>
-                        <a href="#">Register</a>
-                     </li>
-                     <li>
-                        <a href="#">Order Status</a>
-                     </li>
-                  </ul>
-               </nav>
-            </section>
-            <section class="about col-lg-2">
-               <h3>About Us</h3>
-               <nav>
-                  <ul>
-                     <li>
-                        <a href="#">Our Story</a>
-                     </li>
-                     <li>
-                        <a href="#">Careers</a>
-                     </li>
-                  </ul>
-               </nav>
-            </section>
-            <section class="footertopHelp col-lg-3">
-               <h3>Help</h3>
-               <nav>
-                  <ul>
-                     <li>
-                        <a href="#">Contact Us</a>
-                     </li>
-                     <li>
-                        <a href="#">Order Status</a>
-                     </li>
-                     <li>
-                        <a href="#">Returns</a>
-                     </li>
-                  </ul>
-               </nav>
-            </section>
-            <section class="footertopFollowUs col-lg-3">
-               <h3>Follow us!</h3>
-               <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut sed nunc
-                  eu turpis aliquet rutrum vitae sit amet sem. Sed vitae leo sed velit
-                  venenatis finibus. Vestibulum ante ipsum primis in faucibus orci
-                  luctus et ultrices posuere cubilia curae;
-               </p>
-               <div class="socialIcons">
-             <a href="#"><img src="resources/images/1-instagram.jpg" alt="social icon1"/></a>
-             <a href="#"><img src="resources/images/1-facebook.jpg" alt="social icon2"/></a>
-             <a href="#"><img src="resources/images/1-twitter.jpg" alt="social icon3"/></a>
-               </div>
-            </section>
+         <div class="topfooter">
+           <section class="col-lg-3">
+             <h3>Account</h3>
+             <nav>
+               <ul>
+                 <li>
+                   <a href="#">Sign in</a>
+                 </li>
+                 <li>
+                   <a href="#">Register</a>
+                 </li>
+                 <li>
+                   <a href="#">Order Status</a>
+                 </li>
+               </ul>
+             </nav>
+           </section>
+           <section class="about col-lg-2">
+             <h3>About Us</h3>
+             <nav>
+               <ul>
+                 <li>
+                   <a href="#">Our Story</a>
+                 </li>
+                 <li>
+                   <a href="#">Careers</a>
+                 </li>
+               </ul>
+             </nav>
+           </section>
+           <section class="topfooterHelp col-lg-3">
+             <h3>Help</h3>
+             <nav>
+               <ul>
+                 <li>
+                   <a href="#">Contact Us</a>
+                 </li>
+                 <li>
+                   <a href="#">Order Status</a>
+                 </li>
+                 <li>
+                   <a href="#">Returns</a>
+                 </li>
+               </ul>
+             </nav>
+           </section>
+           <section class="col-lg-3">
+             <h3>Follow us!</h3>
+             <p>
+               Sample Text
+             </p>
+             <div class="socialIcons social-media-blk">
+               <a href="#"><img src="resources/images/1-instagram.jpg" alt="instagram"/></a>
+               <a href="#"><img src="resources/images/1-facebook.jpg" alt="facebook"/></a>
+               <a href="#"><img src="resources/images/1-twitter.jpg" alt="twitter"/></a>
+             </div>
+           </section>
+           <section class="col-lg-4">
+             <h3>Subscribe to Venia</h3>
+             <p>
+               Recieve the latest news, update and special offers right to your inbox.
+             </p>
+             <div>
+               <a href="#"><img src="resources/images/subscribe_icon.webp" alt="subscribe icon"/></a>
+             </div>
+           </section>
          </section>
-         <div class="footerbottom container mx-0">
-            <section class="footerbottom--left col-lg-1">
-               <!-- <img src=""> -->
-               <a href="#" class="logo">VENIA</a>
-            </section>
-            <section class="footerbottom--middle col-lg-7">
-               @ copyright, company name address city name zip
-            </section>
-            <section class="footerbottom-right col-lg-3">
-               <nav>
-                  <ul>
-                     <li>
-                        <a href="#">Terms of use</a>
-                     </li>
-                     <li>
-                        <a href="#">Privacy Policy</a>
-                     </li>
-                  </ul>
-               </nav>
-            </section>
+         <div class="footer container_list mx-0">
+           <section class="footer_left col-lg-1">
+             <a href="#" class="logo">VENIA</a>
+           </section>
+           <section class="footer_middle col-lg-7">
+             Copyright © 2013-present Magento, Inc. All rights reserved.
+           </section>
+           <section class="footer-right col-lg-3">
+             <nav>
+               <ul>
+                 <li>
+                   <a href="#">Terms of use</a>
+                 </li>
+                 <li>
+                   <a href="#">Privacy Policy</a>
+                 </li>
+               </ul>
+             </nav>
+           </section>
          </div>
-      </footer>
+       </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
       <script type="text/javascript" src="resources/js/global/bootstrap5.02.min.js"></script> 
       <script type="text/javascript" src="resources/js/cart.js"></script>

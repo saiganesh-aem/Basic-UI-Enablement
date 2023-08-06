@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="resources/css/variable.css" />
     <link rel="stylesheet" href="resources/css/global/bootstrap.css" />
     <link rel="stylesheet" href="resources/css/style.css" />
-<title>VENIA Project</title>
+<title>VENIA</title>
   </head>
   <body class="no-gutters">
-        <header class="container">
-            <nav class="container navbar navbar-expand-sm">
+        <header class="container_list">
+            <nav class="container_list navbar navbar-expand-sm">
                 <button
                   class="navbar-toggler navbar-light"
                   type="button"
@@ -25,13 +25,13 @@
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="logo col col-md-1">
-                  <h1><a class="logo_text" href="#">VENIA</a></h1>
+                  <h1><a href="#">VENIA</a></h1>
                 </div>
-                <div class="col-1 d-block d-sm-none operations d-flex">
-                  <div class="operations_cart">
-                    <a href="cart.html" class="operations_cart--text">
+                <div class="col-1 d-block d-sm-none d-flex">
+                  <div>
+                    <a href="cart.html">
                       <span id="cartitem" class="dot"></span>
-                      <img src="/resources/images/1-shopping-bag.jpg" alt="Cart" />
+                      <img src="resources/images/1-shopping-bag.jpg" alt="Cart" />
                     </a>
                   </div>
                 </div>
@@ -50,7 +50,7 @@
                       <a class="nav-link" href="productlist.html?category=men's clothing">Men</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="productlist.html?category=jewelery">Jwellery</a>
+                      <a class="nav-link" href="productlist.html?category=jewelery">Jewellery</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="productlist.html?category=electronics">Electronics</a>
@@ -59,105 +59,93 @@
                 </div>
                 <div class="operations d-flex">
                   <div  id="mini_cart" class="operations_cart d-none d-sm-block">
-                    <a href="cart.html" class="operations_cart--text">
+                    <a href="cart.html">
 					<span id="cartitem" class="dot"></span>
-                      <img src="/resources/images/1-shopping-bag.jpg" alt="Cart" />
+                      <img src="resources/images/1-shopping-bag.jpg" alt="shopping bag" />
                     </a>
                   </div>
                 </div>
               </nav>
           </header>
-    <main class="container">
-<div class="hero hero--fullwidth background-gray">
+    <main class="container_list">
+<div class="hero hero_fullwidth bg-gray">
 	<div class="col-md-6 hero-content">
-  
 		<h1>Shop the new Signature Collections</h1>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
-		<button type="button" class="btn btn__primary btn-sm btn-block">Shop Now</button>
+		<p>Sample Text : </p>
+		<button type="button" class="button button-primary button-sm button-section">Shop Now</button>
 	</div>
 	<div class="col-md-6 hero-banner">
-	 <img src="resources/images/Venia_Cat_1_m.webp" alt="hero banner"/>
-	</div>
-	<div class="col-md-6 hero-banner--mob">
-	 <img src="resources/images/00 Hero.png" alt="hero banner"/>
-	 <div class="col-md-6 hero__content--mob">
-  
-		<h1>Shop the new Signature Collections</h1>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-		<button type="button" class="btn btn__primary btn-sm btn-block">Shop Now</button>
+	 <img src="resources/images/men_trek_shoe.jpg" alt="hero banner"/>
 	</div>
 	</div>
 </div>
-
-<div class="gallery">
-  <figure class="gallery__item gallery__item--1">
+<div class="gallery justify-content-center">
+  <figure class="category">
     <a href="productlist.html?category=women's clothing">
-      <img src="resources/images/Venia_Cat_1.webp" class="gallery__img" alt="Image 1">
-      <figcaption class="gallery__item-caption">
+      <img src="resources/images/womens_fasion.jpg" class="category_img" alt="womens fasion">
+      <figcaption class="category-caption">
       <h1>Shop for Women</h1>
-      <p>Lorem Ipsum is simply dummy</p>
+      <p>description</p>
       </figcaption>
   </a>
   </figure>
-  <figure class="gallery__item gallery__item--2">
+  <figure class="category justify-content-center">
     <a href="productlist.html?category=men's clothing">
-      <img src="resources/images/Mask-Group-1.webp" class="gallery__img" alt="Image 2">
-    <figcaption class="gallery__item-caption">
+      <img src="resources/images/mens_fasion.jpg" class="category_img" alt="mens fasion">
+    <figcaption class="category-caption">
     <h1>Shop for Men</h1>
-    <p>Lorem Ipsum is simply dummy</p>
+    <p>description</p>
     </figcaption>
   </a>
   </figure>
-  <figure class="gallery__item gallery__item--3">
+  <figure class="category justify-content-center">
     <a href="productlist.html?category=jewelery">
-      <img src="resources/images/Mask-Group-2.webp" class="gallery__img" alt="Image 3">
-      <figcaption class="gallery__item-caption">
-      <h1>Jwellery</h1>
-      <p>Lorem Ipsum is simply dummy</p>
+      <img src="resources/images/electronics_icon.webp" class="category_img" alt="electronics icon">
+      <figcaption class="category-caption">
+      <h1>Electronics</h1>
+      <p>description</p>
       </figcaption>
   </a>
   </figure>
-  <figure class="gallery__item gallery__item--3">
-      <a href="productlist.html?category=electronics">
-        <img src="resources/images/Mask-Group-2.webp" class="gallery__img" alt="Image 3">
-      <figcaption class="gallery__item-caption">
-      <h1>Electronics</h1>
-      <p>Lorem Ipsum is simply dummy</p>
+  <figure class="category justify-content-center">
+    <a href="productlist.html?category=jewelery">
+      <img src="resources/images/jewellery_icon.jpg" class="category_img" alt="jewellery_icon">
+      <figcaption class="category-caption">
+      <h1>Jewellery</h1>
+      <p>description</p>
       </figcaption>
-    </a>
-    </figure>
+  </a>
+  </figure>
 </div>
 <div class="hero hero--2">
 	<div class="col-md-6 hero-content">
-  
 		<h1>Take off in the new Signature Legging</h1>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type.</p>
-		<a href="productlist.html?category=all" class="btn btn__secondary btn-sm btn-block">Shop Collection</a>
-		<a class="btn btn__primary btn-sm btn-block">Shop Now</a>
+		<p>Sample Text</p>
+		<a href="productlist.html?category=all" class="button button_secondary button-sm button-section">Shop Collection</a>
 		<hr>
 	</div>
 	<div class="col-md-6 hero-banner">
-	<img src="resources/images/Product-Image.webp" alt="banner1"/>
+	<img src="resources/images/jogger_pant.jpg" alt="Jogger pant"/>
 	</div>
 </div>
 </br></br>
 <div class="hero hero--3">
 	<div class="col-md-8 hero-banner">
-	 <img src="resources/images/Group-172788.webp" alt="banner2"/>
+	 <img src="resources/images/men_mountain.jpg" alt="men mountain"/>
 	</div>
 	<div class="col-md-4 hero-content">
 		<div>
 			<h1>Conquer your next adventure</h1>
-			<p>Lorem Ipsum is simply dummy</p>
-			<button type="button" class="btn btn-sm btn-block">SHOP DEVICES</button>
+			<p>Sample Text</p>
+			<button type="button" class="button button-sm button-section">SHOP NOW</button>
 		</div>
 	</div>
 </div>
 
 	</main>
     <footer>
-      <div class="footertop">
-        <section class="footertopAccount col-lg-3">
+      <div class="topfooter">
+        <section class="col-lg-3">
           <h3>Account</h3>
           <nav>
             <ul>
@@ -186,7 +174,7 @@
             </ul>
           </nav>
         </section>
-        <section class="footertopHelp col-lg-3">
+        <section class="topfooterHelp col-lg-3">
           <h3>Help</h3>
           <nav>
             <ul>
@@ -202,30 +190,35 @@
             </ul>
           </nav>
         </section>
-        <section class="footertopFollowUs col-lg-3">
+        <section class="col-lg-3">
           <h3>Follow us!</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.Ut sed nunc
-            eu turpis aliquet rutrum vitae sit amet sem. Sed vitae leo sed velit
-            venenatis finibus. Vestibulum ante ipsum primis in faucibus orci
-            luctus et ultrices posuere cubilia curae;
+            Sample Text
           </p>
           <div class="socialIcons social-media-blk">
-            <a href="#"><img src="resources/images/1-instagram.jpg" alt="social icon1"/></a>
-            <a href="#"><img src="resources/images/1-facebook.jpg" alt="social icon2"/></a>
-            <a href="#"><img src="resources/images/1-twitter.jpg" alt="social icon3"/></a>
+            <a href="#"><img src="resources/images/1-instagram.jpg" alt="instagram"/></a>
+            <a href="#"><img src="resources/images/1-facebook.jpg" alt="facebook"/></a>
+            <a href="#"><img src="resources/images/1-twitter.jpg" alt="twitter"/></a>
+          </div>
+        </section>
+        <section class="col-lg-4">
+          <h3>Subscribe to Venia</h3>
+          <p>
+            Recieve the latest news, update and special offers right to your inbox.
+          </p>
+          <div>
+            <a href="#"><img src="resources/images/subscribe_icon.webp" alt="subscribe icon"/></a>
           </div>
         </section>
       </section>
-      <div class="footerbottom container mx-0">
-        <section class="footerbottom--left col-lg-1">
-          <!-- <img src=""> -->
+      <div class="footer container_list mx-0">
+        <section class="footer_left col-lg-1">
           <a href="#" class="logo">VENIA</a>
         </section>
-        <section class="footerbottom--middle col-lg-7">
-          @ copyright, company name address city name zip
+        <section class="footer_middle col-lg-7">
+          Copyright © 2013-present Magento, Inc. All rights reserved.
         </section>
-        <section class="footerbottom-right col-lg-3">
+        <section class="footer-right col-lg-3">
           <nav>
             <ul>
               <li>
